@@ -42,6 +42,7 @@ img {
   height: 8rem;
   width: 8rem;
   position: absolute;
+  right: 0;
   border-radius: 50%;
   border: 8px solid white;
 }
