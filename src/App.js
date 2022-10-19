@@ -1,33 +1,36 @@
 import "./App.css";
+import Profile from "./componets/Profile";
 
 function App() {
+  <div className="header">
+    <h1>React-Card Project</h1>
+  </div>;
+
+  const profiles = [
+    {
+      name: "Jack Bauer",
+      number: "+987 654 321",
+      email: "jack@nowhere.com",
+      image: "/img-1.jpg",
+    },
+    {
+      name: "Chuck Norris",
+      email: "gmail@chucknorris.com",
+      image: "/img-2.jpg",
+      number: "+918 372 574",
+    },
+  ];
+
   return (
     <div className="container">
-      <div className="header">
-        <h1>React-Card Project</h1>
-      </div>
-
-      <section className="card-1">
-        <div>
-          <h1>Jack Bauer</h1>
-          <img src="" alt="" />
-          <div>
-            <p className="numb">+987 654 321</p>
-            <p className="email">jack@nowhere.com</p>
-          </div>
-        </div>
-      </section>
-
-      <section className="card-2">
-        <div>
-          <h1>Chuck Norris</h1>
-          <img src="" alt="" />
-          <div>
-            <p className="numb">+918 372 574</p>
-            <p className="email">gmail@chucknorris.com</p>
-          </div>
-        </div>
-      </section>
+      {profiles.map((profile, index) => (
+        <Profile
+          name={profile.name}
+          number={profile.number}
+          email={profile.email}
+          image={profile.image}
+        />
+      ))}
     </div>
   );
 }

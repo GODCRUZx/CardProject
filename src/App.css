@@ -3,6 +3,7 @@
   padding: 2rem;
   background-color: #b4b4b4;
   height: max-content;
+  position: relative;
 }
 .header {
   display: flex;
@@ -22,10 +23,6 @@
   font-weight: 600;
   color: rgba(0, 0, 0, 0.8);
 }
-.card-1 img {
-  border-radius: 50%;
-  border: aqua;
-}
 
 .card-2 {
   display: flex;
@@ -40,7 +37,11 @@
   font-weight: 600;
   color: rgba(0, 0, 0, 0.8);
 }
-.card-2 img {
+
+img {
+  height: 8rem;
+  width: 8rem;
+  position: absolute;
   border-radius: 50%;
-  border: aqua;
+  border: 8px solid white;
 }
